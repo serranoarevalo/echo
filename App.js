@@ -1,14 +1,19 @@
 import React from "react";
-import { View, Text } from "react-native";
-import Echo from "./Echo";
-import LoginPage from "./LoginPage";
+import { View, Text, StyleSheet } from "react-native";
+import LoginNav from "./Navs/LoginNav";
 
 export default class App extends React.Component {
   render() {
-      return (
-        <View>
-          <Text>Echo</Text>
-        </View>
-      );
+    return (
+      <View style={styles.container}>
+        <LoginNav />
+      </View>
+    );
   }
 }
+
+styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});
