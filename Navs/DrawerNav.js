@@ -7,12 +7,8 @@ import FriendManager from "../Screens/FriendManager";
 const DrawerNav = DrawerNavigator(
   {
     homeScreen: { screen: Home },
-    friendManagerScreen: { screen: FriendManager }
+    friendManagerScreen: { screen: FriendManager },
   },
-  {
-    headerMode: "None",
-    initialRouteName: "homeScreen"
-  }
 );
 
 export default DrawerNav;

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 class Home extends Component {
   render() {
     return (
-      <View style={styles.homeContainer}>
+      <View style={styles.container}>
         <Text>Home</Text>
         <Text onPress={() => this.props.navigation.navigate("DrawerOpen")}>
           DrawerButton
@@ -15,10 +15,10 @@ class Home extends Component {
 }
 
 styles = StyleSheet.create({
-  homeContainer: {
+  container: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   }
 });
 

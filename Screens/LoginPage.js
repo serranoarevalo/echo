@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 class LoginPage extends Component {
   render() {
     return (
-      <View style={styles.loginContainer}>
+      <View style={styles.container}>
         <Text>LoginPage</Text>
       </View>
     );
@@ -12,7 +12,7 @@ class LoginPage extends Component {
 }
 
 styles = StyleSheet.create({
-  loginContainer: {
+  container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
