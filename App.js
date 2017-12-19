@@ -2,14 +2,17 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { AppLoading, Asset, Font } from "expo";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
-import LoginNav from "./Navs/LoginNav";
+import DrawerNav from "./Navs/DrawerNav";
+import LoginPage from "./Screens/LoginPage";
 
 export default class App extends React.Component {
   state = {
-    isLoadingComplete: false
+    isLoadingComplete: false,
+    isLoggedIn: true
   };
   render() {
-    const { isLoadingComplete } = this.state;
+    const { isLoadingComplete, isLoggedIn } = this.state;
+    // 이미지, 폰트 등등을 미리 가져오기
     if (!isLoadingComplete) {
       return (
         <AppLoading
@@ -21,7 +24,7 @@ export default class App extends React.Component {
     }
     return (
       <View style={styles.container}>
-        <LoginNav />
+        {isLoggedIn ? <DrawerNav /> : <LoginPage />}
       </View>
     );
   }

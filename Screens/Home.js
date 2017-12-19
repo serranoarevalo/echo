@@ -6,7 +6,9 @@ class Home extends Component {
     return (
       <View style={styles.homeContainer}>
         <Text>Home</Text>
-        <Text onPress={()=>this.props.navigation.navigate('DrawerOpen')}>DrawerButton</Text>
+        <Text onPress={() => this.props.navigation.navigate("DrawerOpen")}>
+          DrawerButton
+        </Text>
       </View>
     );
   }

@@ -6,6 +6,9 @@ class FriendManager extends Component {
     return (
       <View style={styles.container}>
         <Text>FriendManager</Text>
+        <Text onPress={() => this.props.navigation.navigate("DrawerOpen")}>
+          DrawerButton
+        </Text>
       </View>
     );
   }
