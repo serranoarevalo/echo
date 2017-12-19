@@ -4,7 +4,7 @@ import AppContainer from "./presenter";
 const mapStateToProps = (state, ownProps) => {
   const { user } = state;
   return {
-    isLoggedin: user.isLoggedin
+    isLoggedin: true
   };
 };
 

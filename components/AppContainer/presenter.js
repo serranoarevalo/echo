@@ -12,7 +12,7 @@ class AppContainer extends Component {
     console.log(isLoggedin);
     return (
       <View style={styles.container}>
-        {isLoggedin ? <Text>drawer here</Text> : <Text>login here</Text>}
+        {isLoggedin ? <DrawerNav/> : <Text>login here</Text>}
       </View>
     );
   }
