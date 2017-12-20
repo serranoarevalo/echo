@@ -67,13 +67,13 @@ class Home extends Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: Constants.statusBarHeight
   },
   header: {
-    flex: 1, 
+    flex: 1,
     flexDirection: "row",
     backgroundColor: "white",
     alignItems: "center",

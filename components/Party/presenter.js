@@ -32,7 +32,7 @@ class Party extends Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     height: 100,
     alignItems: "center",
@@ -64,7 +64,7 @@ styles = StyleSheet.create({
     marginBottom: 7
   },
   numb: {
-      marginTop: 7
+    marginTop: 7
   }
 });
 
